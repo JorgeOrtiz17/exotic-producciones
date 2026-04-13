@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,10 +13,22 @@ export default function Footer() {
               La mejor experiencia de entretenimiento para eventos en Casanare. DJs profesionales, iluminación, sonido y hora loca.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">
+              <a
+                href="https://www.instagram.com/djcarlosrinconoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors">
+              <a
+                href="https://www.facebook.com/deejaycarlosjulian"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
