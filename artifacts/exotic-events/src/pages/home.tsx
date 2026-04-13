@@ -260,7 +260,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <span className="text-4xl font-black font-display">$500K - $650K</span>
+                    <span className="text-4xl font-black font-display">$650K</span>
                     <span className="text-muted-foreground text-sm ml-2">COP</span>
                   </div>
                   <p className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Incluye</p>
@@ -308,7 +308,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" className="w-full border-primary/20 hover:bg-primary/10" asChild>
-                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Economico con precio sugerido entre $500.000 y $650.000`} target="_blank" rel="noopener noreferrer">
+                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Economico con precio sugerido de $650.000`} target="_blank" rel="noopener noreferrer">
                       Elegir Economico
                     </a>
                   </Button>
@@ -335,7 +335,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <span className="text-5xl font-black font-display">$1.2M - $1.5M</span>
+                    <span className="text-5xl font-black font-display">$1.5M</span>
                     <span className="text-muted-foreground text-sm ml-2">COP</span>
                   </div>
                   <p className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Incluye</p>
@@ -392,7 +392,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter className="pb-8">
                   <Button size="lg" className="w-full text-base h-14" asChild>
-                    <a href={`${WHATSAPP_LINK}?text=Hola, quiero la experiencia completa. Me interesa el paquete Premium con precio sugerido entre $1.200.000 y $1.500.000`} target="_blank" rel="noopener noreferrer">
+                    <a href={`${WHATSAPP_LINK}?text=Hola, quiero la experiencia completa. Me interesa el paquete Premium con precio sugerido de $1.500.000`} target="_blank" rel="noopener noreferrer">
                       Reservar Premium
                     </a>
                   </Button>
@@ -414,7 +414,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <span className="text-4xl font-black font-display">$800K - $1.0M</span>
+                    <span className="text-4xl font-black font-display">$1.0M</span>
                     <span className="text-muted-foreground text-sm ml-2">COP</span>
                   </div>
                   <p className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Incluye</p>
@@ -466,7 +466,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" className="w-full border-primary/20 hover:bg-primary/10" asChild>
-                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Intermedio con precio sugerido entre $800.000 y $1.000.000`} target="_blank" rel="noopener noreferrer">
+                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Intermedio con precio sugerido de $1.0M `} target="_blank" rel="noopener noreferrer">
                       Elegir Intermedio
                     </a>
                   </Button>
