@@ -5,6 +5,7 @@ import {
   Sparkles, 
   Volume2, 
   CheckCircle2, 
+  XCircle,
   Star, 
   MapPin, 
   Phone,
@@ -254,29 +255,61 @@ export default function Home() {
             >
               <Card className="bg-card/50 backdrop-blur border-white/5 relative overflow-hidden">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-display uppercase tracking-wide">Económico</CardTitle>
-                  <CardDescription className="text-lg">Lo esencial para tu fiesta</CardDescription>
+                  <CardTitle className="text-2xl font-display uppercase tracking-wide">Economico</CardTitle>
+                  <CardDescription className="text-lg">Lo esencial para una celebracion con buen ambiente</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <span className="text-4xl font-black font-display">$650K</span>
+                    <span className="text-4xl font-black font-display">$500K - $650K</span>
                     <span className="text-muted-foreground text-sm ml-2">COP</span>
                   </div>
-                  <ul className="space-y-4">
+                  <p className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Incluye</p>
+                  <ul className="space-y-3">
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="text-foreground/80">DJ Básico</span>
+                      <span className="text-foreground/80">2 cabinas B3 de 15"</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="text-foreground/80">Micrófono</span>
+                      <span className="text-foreground/80">DJ basico</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Microfono</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Par LED</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Mini spider</span>
+                    </li>
+                  </ul>
+                  <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-6 mb-4">No incluye</p>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3">
+                      <XCircle className="w-5 h-5 text-white/40 shrink-0" />
+                      <span className="text-foreground/60">Camara de humo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <XCircle className="w-5 h-5 text-white/40 shrink-0" />
+                      <span className="text-foreground/60">Luces roboticas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <XCircle className="w-5 h-5 text-white/40 shrink-0" />
+                      <span className="text-foreground/60">Hora loca</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <XCircle className="w-5 h-5 text-white/40 shrink-0" />
+                      <span className="text-foreground/60">Polvora fria</span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" className="w-full border-primary/20 hover:bg-primary/10" asChild>
-                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Económico de $650.000`} target="_blank" rel="noopener noreferrer">
-                      Elegir Económico
+                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Economico con precio sugerido entre $500.000 y $650.000`} target="_blank" rel="noopener noreferrer">
+                      Elegir Economico
                     </a>
                   </Button>
                 </CardFooter>
@@ -294,43 +327,72 @@ export default function Home() {
               <Card className="bg-card border-primary relative overflow-hidden transform md:scale-105 box-glow">
                 <div className="absolute top-0 inset-x-0 h-1 bg-primary"></div>
                 <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                  Más Popular
+                  Mas Popular
                 </div>
                 <CardHeader className="pt-8">
                   <CardTitle className="text-3xl font-display uppercase tracking-wide text-primary">Premium</CardTitle>
-                  <CardDescription className="text-lg">La experiencia completa de club</CardDescription>
+                  <CardDescription className="text-lg">La experiencia mas completa para una fiesta inolvidable</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <span className="text-5xl font-black font-display">$1.5M</span>
+                    <span className="text-5xl font-black font-display">$1.2M - $1.5M</span>
                     <span className="text-muted-foreground text-sm ml-2">COP</span>
                   </div>
-                  <ul className="space-y-4">
+                  <p className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Incluye</p>
+                  <ul className="space-y-3">
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="font-medium">DJ Profesional</span>
+                      <span className="font-medium">2 cabinas B3 de 15"</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="font-medium">Hora Loca</span>
+                      <span className="font-medium">DJ profesional</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="font-medium">Máquina de Humo</span>
+                      <span className="font-medium">Animacion completa + hora loca</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="font-medium">Luces Profesionales (Láser, LED)</span>
+                      <span className="font-medium">Microfonos</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="font-medium">Sonido de Alta Potencia</span>
+                      <span className="font-medium">Camara de humo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">3 luces roboticas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">Par LED</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">Mini spider</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">Strober</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">Estructura para luces</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">Detonadores de polvora fria</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="font-medium">Accesorios para hora loca</span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter className="pb-8">
                   <Button size="lg" className="w-full text-base h-14" asChild>
-                    <a href={`${WHATSAPP_LINK}?text=Hola, quiero la experiencia completa. Me interesa el paquete Premium de $1.500.000`} target="_blank" rel="noopener noreferrer">
+                    <a href={`${WHATSAPP_LINK}?text=Hola, quiero la experiencia completa. Me interesa el paquete Premium con precio sugerido entre $1.200.000 y $1.500.000`} target="_blank" rel="noopener noreferrer">
                       Reservar Premium
                     </a>
                   </Button>
@@ -348,31 +410,63 @@ export default function Home() {
               <Card className="bg-card/50 backdrop-blur border-white/5 relative overflow-hidden">
                 <CardHeader>
                   <CardTitle className="text-2xl font-display uppercase tracking-wide">Intermedio</CardTitle>
-                  <CardDescription className="text-lg">Equilibrio perfecto</CardDescription>
+                  <CardDescription className="text-lg">El equilibrio ideal entre produccion y presupuesto</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <span className="text-4xl font-black font-display">$1.0M</span>
+                    <span className="text-4xl font-black font-display">$800K - $1.0M</span>
                     <span className="text-muted-foreground text-sm ml-2">COP</span>
                   </div>
-                  <ul className="space-y-4">
+                  <p className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Incluye</p>
+                  <ul className="space-y-3">
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="text-foreground/80">DJ Profesional</span>
+                      <span className="text-foreground/80">2 cabinas B3 de 15"</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="text-foreground/80">Máquina de Humo</span>
+                      <span className="text-foreground/80">DJ</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                      <span className="text-foreground/80">Luces Básicas</span>
+                      <span className="text-foreground/80">Microfonos</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Camara de humo</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">2 luces roboticas</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Par LED</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Mini spider</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                      <span className="text-foreground/80">Animacion basica</span>
+                    </li>
+                  </ul>
+                  <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-6 mb-4">No incluye</p>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3">
+                      <XCircle className="w-5 h-5 text-white/40 shrink-0" />
+                      <span className="text-foreground/60">Polvora fria</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <XCircle className="w-5 h-5 text-white/40 shrink-0" />
+                      <span className="text-foreground/60">Hora loca completa</span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" className="w-full border-primary/20 hover:bg-primary/10" asChild>
-                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Intermedio de $1.000.000`} target="_blank" rel="noopener noreferrer">
+                    <a href={`${WHATSAPP_LINK}?text=Hola, estoy interesado en el paquete Intermedio con precio sugerido entre $800.000 y $1.000.000`} target="_blank" rel="noopener noreferrer">
                       Elegir Intermedio
                     </a>
                   </Button>
