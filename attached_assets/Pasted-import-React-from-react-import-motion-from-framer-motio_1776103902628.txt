@@ -1,0 +1,184 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const App = () => {
+  const phoneNumber = "573172430432";
+
+  const paquetes = [
+    {
+      nombre: "PREMIUM",
+      precio: "$1.500.000",
+      items: ["DJ Profesional", "Hora Loca", "Humo", "Luces Pro"],
+      popular: true
+    },
+    {
+      nombre: "INTERMEDIO",
+      precio: "$1.000.000",
+      items: ["DJ", "Humo", "Luces"],
+      popular: false
+    },
+    {
+      nombre: "ECONÓMICO",
+      precio: "$650.000",
+      items: ["DJ Básico", "Micrófono"],
+      popular: false
+    }
+  ];
+
+  return (
+    <div className="bg-black text-white font-sans">
+
+      {/* HERO QUE VENDE */}
+      <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
+
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30')] bg-cover bg-center scale-110"></div>
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="z-10 px-4"
+        >
+          <p className="text-exoticGreen uppercase tracking-widest text-sm">
+            Eventos en Casanare
+          </p>
+
+          <h1 className="text-5xl md:text-7xl font-black mt-4 leading-tight">
+            La fiesta que todos <br />
+            <span className="text-exoticGreen">van a recordar</span>
+          </h1>
+
+          <p className="mt-6 text-zinc-300 max-w-xl mx-auto">
+            Sonido profesional, luces impactantes y energía que transforma cualquier evento en una experiencia inolvidable.
+          </p>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            href={`https://wa.me/${phoneNumber}`}
+            className="inline-block mt-8 px-8 py-4 bg-exoticGreen text-black font-bold rounded-xl shadow-lg"
+          >
+            Cotizar por WhatsApp
+          </motion.a>
+        </motion.div>
+      </section>
+
+      {/* PRUEBA SOCIAL */}
+      <section className="py-16 bg-zinc-900 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {["+100 Eventos", "Clientes felices", "Sonido PRO", "100% Garantía"].map((item, i) => (
+            <div key={i}>
+              <p className="text-exoticGreen text-3xl font-black">{item.split(" ")[0]}</p>
+              <p className="text-sm text-zinc-400">{item.split(" ").slice(1).join(" ")}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* BENEFICIOS */}
+      <section className="py-20 text-center max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-10">
+          ¿Por qué elegirnos?
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            "Ambiente tipo discoteca",
+            "Equipos profesionales",
+            "Animación garantizada"
+          ].map((item, i) => (
+            <div key={i} className="bg-zinc-900 p-6 rounded-xl">
+              ⚡ {item}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* PAQUETES */}
+      <section className="py-24 px-6 max-w-7xl mx-auto">
+        <h2 className="text-4xl text-center font-bold mb-16">
+          Elige tu experiencia
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {paquetes.map((pkg, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -10 }}
+              className={`p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-exoticGreen hover:shadow-[0_0_40px_rgba(57,255,20,0.3)] transition-all ${pkg.popular ? 'scale-105' : ''}`}
+            >
+              {pkg.popular && (
+                <span className="bg-exoticGreen text-black px-3 py-1 text-xs rounded-full">
+                  Más vendido
+                </span>
+              )}
+
+              <h3 className="text-2xl mt-4 font-bold">{pkg.nombre}</h3>
+              <p className="text-3xl font-black my-4">{pkg.precio}</p>
+
+              <ul className="space-y-3 text-zinc-300">
+                {pkg.items.map((item, i) => (
+                  <li key={i}>⚡ {item}</li>
+                ))}
+              </ul>
+
+              <a
+                href={`https://wa.me/${phoneNumber}`}
+                className="block mt-6 text-center bg-white text-black py-3 rounded-xl font-bold hover:bg-exoticGreen"
+              >
+                Reservar ahora
+              </a>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* TESTIMONIOS */}
+      <section className="py-20 bg-black text-center">
+        <h2 className="text-3xl mb-10 font-bold">
+          Lo que dicen nuestros clientes
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            "La mejor fiesta que hemos tenido",
+            "Sonido brutal 🔥",
+            "Totalmente recomendados"
+          ].map((t, i) => (
+            <div key={i} className="bg-zinc-900 p-6 rounded-xl">
+              <p>"{t}"</p>
+              <span className="text-exoticGreen">★★★★★</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="py-20 text-center bg-zinc-900">
+        <h2 className="text-3xl font-bold mb-6">
+          ¿Listo para tu evento?
+        </h2>
+
+        <a
+          href={`https://wa.me/${phoneNumber}`}
+          className="px-10 py-4 bg-exoticGreen text-black font-bold rounded-xl"
+        >
+          Reservar por WhatsApp
+        </a>
+      </section>
+
+      {/* WHATSAPP FLOAT */}
+      <a
+        href={`https://wa.me/${phoneNumber}`}
+        className="fixed bottom-6 right-6 flex items-center gap-3 bg-[#25D366] px-5 py-3 rounded-full shadow-lg hover:scale-105 transition"
+      >
+        <span className="hidden md:block font-semibold text-white">
+          Reserva ahora
+        </span>
+        💬
+      </a>
+
+    </div>
+  );
+};
+
+export default App;

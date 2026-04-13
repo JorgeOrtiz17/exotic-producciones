@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Hpl-RvwuRXBD-QxyGIq2g"
+uri = "file://artifacts/exotic-events/public/hero-bg.png"
+type = "image"
+title = "Neon club DJ background"
+
+[[generated]]
+id = "IGH5gOt7IpZ-Ep5qQ9Ewp"
+uri = "file://artifacts/exotic-events/public/dj-setup.png"
+type = "image"
+title = "DJ turntable glowing"
+
+[[generated]]
+id = "VK21N00LlJpv-0JmDnpZW"
+uri = "file://artifacts/exotic-events/public/party-crowd.png"
+type = "image"
+title = "Party crowd dancing"
