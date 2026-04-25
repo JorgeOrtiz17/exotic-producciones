@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group" onClick={(e) => { e.preventDefault(); scrollTo('top'); }}>
           <span className="text-2xl font-black font-display uppercase tracking-tighter">
-            Exotic <span className="text-primary group-hover:text-glow transition-all">Events</span>
+            Producciones <span className="text-primary group-hover:text-glow transition-all">EXÓTIC</span>
           </span>
         </a>
 

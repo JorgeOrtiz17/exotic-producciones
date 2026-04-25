@@ -33,7 +33,7 @@ export default function Home() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground overflow-hidden dark" ref={containerRef}>
+    <div id="top" className="relative min-h-screen bg-background text-foreground overflow-hidden dark" ref={containerRef}>
       <div className="fixed inset-0 z-0 bg-noise pointer-events-none mix-blend-overlay"></div>
       
       <Navbar />
@@ -63,15 +63,23 @@ export default function Home() {
             <span className="text-sm font-medium tracking-wide uppercase">El Mejor Sonido de Casanare</span>
           </motion.div>
           
-          <motion.h1 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 uppercase font-display"
+            className="mb-6"
           >
-            Exotic <span className="text-primary text-glow">Events</span>
-          </motion.h1>
-          
+            <p className="text-sm md:text-base uppercase tracking-[0.35em] text-primary/80 font-semibold mb-3">
+              Producciones
+            </p>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-4 uppercase font-display">
+              EXÓTIC
+            </h1>
+            <p className="text-2xl md:text-4xl font-black text-primary text-glow uppercase tracking-tight">
+              Audio e iluminación profesional
+            </p>
+          </motion.div>
+
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

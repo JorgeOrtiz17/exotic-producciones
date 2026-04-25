@@ -7,14 +7,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <span className="text-3xl font-black font-display uppercase tracking-tighter mb-4 block">
-              Exotic <span className="text-primary text-glow">Events</span>
+              Producciones <span className="text-primary text-glow">EXÓTIC</span>
             </span>
             <p className="text-muted-foreground max-w-sm mb-6">
-              La mejor experiencia de entretenimiento para eventos en Casanare. DJs profesionales, iluminación, sonido y hora loca.
+              Audio e iluminación profesional para eventos inolvidables. Sonido, luces y fiesta con actitud única.
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://www.instagram.com/djcarlosrinconoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                href="https://www.instagram.com/sonidoexoticpazdeariporo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -23,7 +23,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.facebook.com/deejaycarlosjulian"
+                href="https://www.facebook.com/profile.php?id=61583586692060"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-white/5 text-center text-muted-foreground text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© {new Date().getFullYear()} Exotic Events. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Producciones Exótic. Todos los derechos reservados.</p>
           <p>Diseñado para hacer vibrar.</p>
         </div>
       </div>
