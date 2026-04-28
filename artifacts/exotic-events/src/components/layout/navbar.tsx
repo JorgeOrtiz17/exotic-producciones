@@ -39,7 +39,7 @@ export default function Navbar() {
             className="flex items-center justify-center w-12 h-12 rounded-full border border-primary/20 bg-primary/10 shadow-[0_0_30px_rgba(57,255,20,0.18)]"
           >
             <motion.img
-              src="/Alien.png"
+              src="/alien.png"
               alt="Logo Alien Exotic"
               className="w-8 h-8 object-contain"
               animate={{ rotate: [0, 8, 0, -8, 0] }}
