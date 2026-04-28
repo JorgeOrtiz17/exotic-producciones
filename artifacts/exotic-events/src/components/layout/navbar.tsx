@@ -30,7 +30,22 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 group" onClick={(e) => { e.preventDefault(); scrollTo('top'); }}>
+        <a href="#" className="flex items-center gap-3 group" onClick={(e) => { e.preventDefault(); scrollTo('top'); }}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, y: -10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            whileHover={{ rotate: 12, scale: 1.05 }}
+            className="flex items-center justify-center w-12 h-12 rounded-full border border-primary/20 bg-primary/10 shadow-[0_0_30px_rgba(57,255,20,0.18)]"
+          >
+            <motion.img
+              src="/Alien.png"
+              alt="Logo Alien Exotic"
+              className="w-8 h-8 object-contain"
+              animate={{ rotate: [0, 8, 0, -8, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </motion.div>
           <span className="text-2xl font-black font-display uppercase tracking-tighter">
             Producciones <span className="text-primary group-hover:text-glow transition-all">EXÓTIC</span>
           </span>
